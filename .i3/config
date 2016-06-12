@@ -187,7 +187,7 @@ bindsym $mod+F4 exec xbacklight -dec 5
 bindsym $mod+F5 exec xbacklight -inc 5
 
 # Shutdown, reboot, lock screen
-set $Locker i3lock -c 2f343f && sleep 1
+set $Locker i3lock -i ~/Pictures/Wallpaper/lock-512.png -t -c 2f343f && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {

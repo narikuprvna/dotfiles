@@ -116,6 +116,15 @@ re-downloaded in order to locate PACKAGE."
         (desktop-save desktop-dirname)))
   (add-hook 'auto-save-hook 'my-desktop-save)
 
+;;; Org-mode
+;;; Outline of bullets instead of list of asterisks
+(add-hook 'org-mode-hook
+          (lambda ()
+            (org-bullets-mode t)))
+
+(setq org-hide-leading-stars t)
+(setq org-ellipsis "--->")
+
 ;;; Org-agenda and org-capture key-bindings
 ;;; C-c a a to view agenda
 (define-key mode-specific-map [?a] 'org-agenda)
